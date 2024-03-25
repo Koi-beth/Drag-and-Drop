@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,7 +9,7 @@
 </head>
 <body>
     <h1 class="main-title">Kanban Board</h1>
-    <div class="drad-container">
+    <div class="drag-container">
         <ul class="drag-list">
             <!-- Backlog Column -->
             <li class="drag-column backlog-column">
@@ -18,7 +18,7 @@
                 </span>
                 <!-- Backlog Content -->
                 <div id="backlog-content" class="custom-scroll">
-               <ul class="drag-item-list" id="backlog-list"></ul>
+                    <ul class="drag-item-list" id="backlog-list" ondrop="drop(event)" ondragover="allowDrop(event)" ondragenter="dragEnter(0)"></ul>
                 </div>
                 <!-- Add Button Group -->
                 <div class="add-btn-group">
@@ -26,12 +26,12 @@
                         <span class="plus-sign">+</span>
                         <span>Add Item</span>
                     </div>
-                <div class="add-btn solid">
-                    <span>Save Item</span>
-                </div> 
-                <div class="add-container">
-                    <div class="add-item"></div>
-                </div>
+                    <div class="add-btn solid">
+                        <span>Save Item</span>
+                    </div> 
+                    <div class="add-container">
+                        <div class="add-item"></div>
+                    </div>
                 </div>
             </li>
              <!-- Progress Column -->
@@ -41,7 +41,7 @@
                 </span>
                 <!-- Progress Content -->
                 <div id="progress-content" class="custom-scroll">
-               <ul class="drag-item-list" id="progress-list"></ul>
+                    <ul class="drag-item-list" id="progress-list" ondrop="drop(event)" ondragover="allowDrop(event)" ondragenter="dragEnter(1)"></ul>
                 </div>
                 <!-- Add Button Group -->
                 <div class="add-btn-group">
@@ -49,12 +49,12 @@
                         <span class="plus-sign">+</span>
                         <span>Add Item</span>
                     </div>
-                <div class="add-btn solid">
-                    <span>Save Item</span>
-                </div> 
-                <div class="add-container">
-                    <div class="add-item"></div>
-                </div>
+                    <div class="add-btn solid">
+                        <span>Save Item</span>
+                    </div> 
+                    <div class="add-container">
+                        <div class="add-item"></div>
+                    </div>
                 </div>
             </li>
              <!-- Complete Column -->
@@ -64,7 +64,7 @@
                 </span>
                 <!-- Complete Content -->
                 <div id="complete-content" class="custom-scroll">
-               <ul class="drag-item-list" id="complete-list"></ul>
+                    <ul class="drag-item-list" id="complete-list" ondrop="drop(event)" ondragover="allowDrop(event)" ondragenter="dragEnter(2)"></ul>
                 </div>
                 <!-- Add Button Group -->
                 <div class="add-btn-group">
@@ -72,22 +72,22 @@
                         <span class="plus-sign">+</span>
                         <span>Add Item</span>
                     </div>
-                <div class="add-btn solid">
-                    <span>Save Item</span>
-                </div> 
-                <div class="add-container">
-                    <div class="add-item"></div>
-                </div>
+                    <div class="add-btn solid">
+                        <span>Save Item</span>
+                    </div> 
+                    <div class="add-container">
+                        <div class="add-item"></div>
+                    </div>
                 </div>
             </li>
              <!-- On Hold Column -->
-             <li class="drag-column on hold-column">
+             <li class="drag-column on-hold-column">
                 <span class="header">
                     <h1>On Hold</h1>
                 </span>
                 <!-- On hold Content -->
-                <div id="on hold-content" class="custom-scroll">
-               <ul class="drag-item-list" id="on hold-list"></ul>
+                <div id="on-hold-content" class="custom-scroll">
+                    <ul class="drag-item-list" id="on-hold-list" ondrop="drop(event)" ondragover="allowDrop(event)" ondragenter="dragEnter(3)"></ul>
                 </div>
                 <!-- Add Button Group -->
                 <div class="add-btn-group">
@@ -95,12 +95,12 @@
                         <span class="plus-sign">+</span>
                         <span>Add Item</span>
                     </div>
-                <div class="add-btn solid">
-                    <span>Save Item</span>
-                </div> 
-                <div class="add-container">
-                    <div class="add-item"></div>
-                </div>
+                    <div class="add-btn solid">
+                        <span>Save Item</span>
+                    </div> 
+                    <div class="add-container">
+                        <div class="add-item"></div>
+                    </div>
                 </div>
             </li>
         </ul>
